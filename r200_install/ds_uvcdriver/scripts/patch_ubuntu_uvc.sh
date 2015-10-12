@@ -11,7 +11,6 @@ cd linux-*
 KBASE=`pwd`
 
 patch -p1 < $DIR/../patches/linux-lts-saucy-3_11_0.patch
-patch -p1 < $DIR/../patches/uvc_close_bulk_stream.patch
 
 cp /boot/config-`uname -r` .config
 cp  /usr/src/linux-headers-`uname -r`/Module.symvers .
